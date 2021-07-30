@@ -1,0 +1,16 @@
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.scrambletext {
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-size: 28px;
+  color: #FFDD6B;
+}
+.dud {
+  color: #F8DC81;
+}

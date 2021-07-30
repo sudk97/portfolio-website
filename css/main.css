@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway.ttf')  format('truetype');
+}
+
+
+html {
+    font-size: 16px;
+    --bg1: #654062;
+    --txt1: #FFD66B;
+    --txt2: #F4F4F4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Raleway", monospace;
+    background-color: var(--bg1);
+}
+
+body .hidden {
+    display: none;
+}
+body .block {
+    display: block;
+}
+
+.menuIconInStroke {
+    stroke: var(--bg1);
+}
+
+.menuIconOutStroke {
+    stroke: var(--txt1);
+}
+
+.menuIcon {
+    height: 2rem;
+    width: 2rem;
+    position:fixed;
+	top:2rem;
+	right:2rem;
+	text-align:center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: var(--txt1);
+    overflow-x: hidden;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu .menuItemBox {
+    width: 6rem;
+    height: fit-content;
+    border: 0.25rem solid var(--bg1);
+    border-radius: 1rem;
+    margin: 2rem 0 0 2rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    color: var(--bg1);
+
+    cursor: pointer;
+    background-image: linear-gradient(var(--bg1), var(--bg1));
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+
+body .menu .resume:hover {
+    background-size: 100% 100%;
+    color: var(--txt1);
+}
+
+.menu .menuItemBox:hover {
+    background-size: 100% 100%;
+    color: var(--txt2);
+}
+
+.menu h1 {
+    font-size: 1rem;
+}
+
+section {
+    height: 100vh;
+    width: auto;
+}
+
+.introMain {
+    text-align: center;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.intro .firstBox {
+    border: 0.25rem solid var(--txt1);
+    border-radius: 1.25rem;
+}
+
+.intro .sideText {
+    color: var(--txt2);
+    letter-spacing: 0.50rem;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+
+}
+
+.intro h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 1rem 1rem 1rem 1.5rem;
+}
+
+.intro h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0 0.5rem 0 0;
+}
+
+.type1 {
+    color: var(--txt1);
+    letter-spacing: 0.5rem;
+} 
+
+.type2 {
+    color: var(--txt2);
+    letter-spacing: 0.75rem;
+}
+
+.scrollBox {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollDown {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 3%;
+    
+}
+
+.bounceUpDown {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(30px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(5px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+/*
+
+.floaticon {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#FFD66B;
+	border-radius:50px;
+	text-align:center;
+    display: none;
+}
+
+.mailicon {
+    height: 20px;
+    margin-top: 19px;
+}
+
+*/
