@@ -1,0 +1,264 @@
+.timeline {
+    color: var(--bg1);
+    position: relative;
+    width: 41.25rem;
+    margin: 0 auto;
+    margin-top: 1.2px;
+    padding: 1em 0;
+    list-style-type: none;
+  }
+  
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 0.3rem;
+    height: 100%;
+    margin-left: -3px;
+    background: var(--txt1);
+    background: -moz-linear-gradient(top, var(--bg1) 0%, rvar(--txt1) 8%, var(--txt1) 92%, var(--bg1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+    background: -webkit-linear-gradient(top, var(--bg1) 0%, var(--txt1) 8%, var(--txt1) 92%, var(--bg1) 100%);
+    background: -o-linear-gradient(top, var(--bg1) 0%, var(--txt1) 8%, var(--txt1) 92%, var(--bg1) 100%);
+    background: -ms-linear-gradient(top, var(--bg1) 0%, var(--txt1) 8%, var(--txt1) 92%, var(--bg1) 100%);
+    background: linear-gradient(to bottom, var(--bg1) 0%, var(--txt1) 8%, var(--txt1) 92%, var(--bg1) 100%);
+    
+    z-index: 5;
+  }
+  
+  .timeline li {
+    padding: 1em 0;
+  }
+  
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .direction-l {
+    position: relative;
+    width: 18.75rem;
+    float: left;
+    text-align: right;
+  }
+  
+  .direction-r {
+    position: relative;
+    width: 18.75rem;
+    float: right;
+  }
+  
+  .flag-wrapper {
+    position: relative;
+    display: inline-block;
+    
+    text-align: center;
+  }
+  
+  .flag {
+    position: relative;
+    display: inline;
+    background: var(--txt1);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .direction-l .flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-r .flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -2.5rem;
+    content: ' ';
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: -0.625rem;
+    background: var(--txt1);
+    border-radius: 10px;
+    border: 4px solid var(--bg1);
+    z-index: 10;
+  }
+  
+  .direction-r .flag:before {
+    left: -2.5rem;
+  }
+  
+  .direction-l .flag:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -0.5rem;
+    border: solid transparent;
+    border-left-color: var(--txt1);
+    border-width: 0.5rem;
+    pointer-events: none;
+  }
+  
+  .direction-r .flag:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -0.5rem;
+    border: solid transparent;
+    border-right-color: var(--txt1);
+    border-width: 0.5rem;
+    pointer-events: none;
+  }
+  
+  .time-wrapper {
+    display: inline;
+    
+    line-height: 1rem;
+    font-size: 0.66666rem;
+    color: var(--txt1);
+    vertical-align: middle;
+  }
+  
+  .direction-l .time-wrapper {
+    float: left;
+  }
+  
+  .direction-r .time-wrapper {
+    float: right;
+  }
+  
+  .time {
+    display: inline-block;
+    padding: 0.25rem 0.375rem;
+    background: var(--bg1);
+  }
+  
+  .desc {
+    margin: 1rem 0.75rem 0 0;
+    color: var(--txt2);
+    background-color: var(--bg1);
+    font-size: 0.77777rem;
+    font-style: italic;
+    line-height: 1.5rem;
+  }
+  
+  .direction-r .desc {
+    margin: 1em 0 0 0.75rem;
+  }
+  
+  
+  @media screen and (max-width: 660px) {
+  
+    .timeline {
+            width: 100%;
+            padding: 4rem 0 1rem 0;
+    }
+    
+    .timeline li {
+            padding: 2rem 0;
+    }
+    
+    .direction-l,
+    .direction-r {
+        float: none;
+        width: 100%;
+    
+        text-align: center;
+    }
+    
+    .flag-wrapper {
+        text-align: center;
+    }
+    
+    .flag {
+        z-index: 15;
+    }
+    
+    .direction-l .flag:before,
+    .direction-r .flag:before {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        content: ' ';
+        display: block;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-left: -0.5625rem;
+        border-radius: 0.625rem;
+        z-index: 10;
+    }
+    
+    .direction-l .flag:after,
+    .direction-r .flag:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -0.5rem;
+        height: 0;
+        width: 0;
+        margin-left: -0.5rem;
+        border: solid transparent;
+        border-width: 0.5rem;
+        pointer-events: none;
+    }
+    
+    .time-wrapper {
+        display: block;
+        position: relative;
+        margin: 0.25rem 0 0 0;
+        z-index: 14;
+    }
+    
+    .direction-l .time-wrapper {
+        float: none;
+    }
+    
+    .direction-r .time-wrapper {
+        float: none;
+    }
+    
+    .desc {
+        position: relative;
+        margin: 0.5rem 0 0 0;
+        padding: 0.5rem;
+        z-index: 100;
+    }
+    
+    .direction-l .desc,
+    .direction-r .desc {
+        position: relative;
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem;
+        z-index: 100;
+    }
+  
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 660px) {
+  
+    .direction-l .desc,
+    .direction-r .desc {
+        margin: 1rem 4rem 0 4rem;
+    }
+  
+  }

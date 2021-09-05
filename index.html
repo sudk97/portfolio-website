@@ -17,6 +17,11 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 		<link rel="stylesheet" href="css/main.css" />
 	    <link rel="stylesheet" href="css/loading.css" />
 	    <link rel="stylesheet" href="css/scramble.css" />
+		<link rel="stylesheet" href="css/cards.css" />
+		<link rel="stylesheet" href="css/swipeinst.css" />
+		<link rel="stylesheet" href="css/timeline.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<script src="js/importVar.js"></script>
 	    <script src="js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -25,6 +30,8 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 		<script src="js/anime.js"></script>
 		<script src="js/scrolling.js"></script>
 		<script src="js/randomColors.js"></script>
+		<script src="js/hammer.js"></script>
+		
 		<title>Sudarshan Khasnis</title>
 	</head>
 
@@ -32,7 +39,7 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 
 		<!--
 		<a href="#" class="floaticon">
-			<img class="mailicon" src="images/mailicon.png" alt="mail"/>
+			<img class="mailicon" src="/images/mailicon.png" alt="mail"/>
 		</a>
 		-->
 		
@@ -67,14 +74,14 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 			<div class="menuItemBox" onclick="scrollPageTo(1)">
 				<h1 class="menuItem">works</h1>
 			</div>
-			<div class="menuItemBox">
-				<h1 class="menuItem" onclick="scrollPageTo(2)">journey</h1>
+			<div class="menuItemBox" onclick="scrollPageTo(2)">
+				<h1 class="menuItem">journey</h1>
 			</div>
 			<div class="menuItemBox">
 				<h1 class="menuItem" onclick="scrollPageTo(3)">i about</h1>
 			</div>
 			<div class="menuItemBox resume">
-				<h1 class="menuItem">resume</h1>
+				<a href="https://drive.google.com/file/d/1bbQz14_hOgmgVINamfzZXQRoeXk3RNLW/" target="_blank"><h1 class="menuItem">resume</h1></a>
 			</div>
 
 		</div>
@@ -101,7 +108,79 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 		</section>
 
 		<section id="works" class="works">
+
+			<div id="board">
+				<div class="firstcard card">
+					<h3>Drag to view projects</h3>
+					<div class="instruction">
+						<i class="fa fa-hand-pointer-o" style="color: var(--bg1);font-size: 2rem;padding: 1rem;"></i>
+					</div>
+				</div>
+				
+			</div>
 			
+		</section>
+
+		<section id="journey" class="journey">
+			<!--
+			<svg class="journey" width="350" height="200" viewBox="0 0 583 334">
+				<path d="M2689.434,3987.921h528.021s32.569-60.806,0-154.167c-97.8-1.391-528.021,0-528.021,0s-34.984-79.566,0-154.1c108.347-1.979,528.021,0,528.021,0" transform="translate(-2661.885 -3666.273)" fill="none" stroke="var(--txt1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+				<circle class="journeybuttons" id="Ellipse_1" data-name="Ellipse 1" cx="12.5" cy="12.5" r="12.5" transform="translate(12 309)"/>
+				<circle class="journeybuttons" id="Ellipse_3" data-name="Ellipse 3" cx="12.5" cy="12.5" r="12.5" transform="translate(558 232)"/>
+				<circle class="journeybuttons" id="Ellipse_4" data-name="Ellipse 4" cx="12.5" cy="12.5" r="12.5" transform="translate(0 76)" />
+				<circle class="journeybuttons" id="Ellipse_6" data-name="Ellipse 6" cx="12.5" cy="12.5" r="12.5" transform="translate(545)" />
+			  </svg>
+			  
+			  -->
+
+
+			<ul class="timeline">
+
+				<!-- Item 1 -->
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="flag">Freelancer</span>
+							<span class="time-wrapper"><span class="time">2013 - present</span></span>
+						</div>
+						<div class="desc">My current employment. Way better than the position before!</div>
+					</div>
+				</li>
+			
+				<!-- Item 2 -->
+				<li>
+					<div class="direction-l">
+						<div class="flag-wrapper">
+							<span class="flag">Apple Inc.</span>
+							<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+						</div>
+						<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+					</div>
+				</li>
+
+				<!-- Item 3 -->
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="flag">Harvard University</span>
+							<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+						</div>
+						<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+					</div>
+				</li>
+			
+			</ul>
+
+		</section>
+
+
+		<section id="about" class="about">
+			
+			<div class="aboutpic">
+				
+			</div>
+				
+
 		</section>
 
 		
@@ -137,6 +216,7 @@ Please mail me (sudarshan.khasnis@gmail.com) or use "Contact me" to get in touch
 		-->
 		<script src="js/main.js"></script>
 	    <script src="js/loading.js"></script>
+		<script src="js/cards.js"></script>
 		
 
 

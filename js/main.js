@@ -1,3 +1,6 @@
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
 
 const introTimeline = gsap.timeline( { 
    
@@ -69,7 +72,17 @@ function scrollPageTo(index){
   var eleToScrollTo = "#intro"
   if(index==1)
     eleToScrollTo = "#works"
+  else if(index==2)
+    eleToScrollTo = "#journey"
+  else if(index==3)
+    eleToScrollTo = "#about"
 
   gsap.to(window, {duration: 2, scrollTo: eleToScrollTo});
 
 }
+
+$(".resume").click(function() {
+  var url = $(this).find("a").attr('href');
+  window.open(url, '_blank');
+  return false;
+});

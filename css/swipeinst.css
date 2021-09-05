@@ -1,0 +1,25 @@
+@keyframes swipe-horizontal{
+    0% {
+        transform: translateX(-50px);
+    }
+    
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(-50px);
+    }
+
+}
+.instruction {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+.instruction i {
+    animation: swipe-horizontal 2s infinite;    
+}

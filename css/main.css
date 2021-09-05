@@ -191,7 +191,35 @@ section {
     100% { transform: scale(1,1)    translateY(0); }
 }
 
-/*
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.journey {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.journeybuttons {
+    /*
+    -webkit-filter: drop-shadow( 0.1rem 0.1rem 0.05rem var(--txt1));
+    filter: drop-shadow( 0.1rem 0.1rem 0.05rem var(--txt1));
+    /* Similar syntax to box-shadow */
+    fill: var(--txt2);
+
+    transform: scale(2.0);
+    -ms-transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    
+    transition: all 2s ease-in-out 0.5s;
+    -webkit-transition: all 2s ease-in-out 0.5s;
+}
+
+
 
 .floaticon {
 	position:fixed;
@@ -199,7 +227,7 @@ section {
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#FFD66B;
+	background-color: var(--txt1);
 	border-radius:50px;
 	text-align:center;
     display: none;
@@ -210,4 +238,3 @@ section {
     margin-top: 19px;
 }
 
-*/
