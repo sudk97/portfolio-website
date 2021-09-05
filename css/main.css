@@ -219,8 +219,6 @@ a {
     -webkit-transition: all 2s ease-in-out 0.5s;
 }
 
-
-
 .floaticon {
 	position:fixed;
 	width:60px;
@@ -238,3 +236,79 @@ a {
     margin-top: 19px;
 }
 
+.aboutcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutpic {
+    width: 20%;
+    border: 0.25rem solid var(--txt1);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-size: 35rem;
+}
+
+.aboutbox {
+    padding: 3rem;
+    margin: 1rem;
+    font-size: 0.8rem;
+    width: 20%;
+    color: var(--txt2);
+    border: 0.25rem solid var(--txt1);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+#aboutimg {
+    height: 16rem;
+    padding: 2rem;
+    /*
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    */
+}
+
+@media screen and (max-width: 660px) {
+
+    .aboutcontainer {
+        position: relative;
+        top: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutpic {
+        width: 50%;
+        border: 0.25rem solid var(--txt1);
+        border-radius: 1.25rem;
+        overflow: hidden;
+        
+    }
+    
+    .aboutbox {
+        padding: 3rem;
+        margin: 1rem;
+        font-size: 0.8rem;
+        width: 80%;
+        color: var(--txt2);
+        border: 0.25rem solid var(--txt1);
+        border-radius: 1.25rem;
+        overflow: hidden;
+    }
+
+}

@@ -19,6 +19,20 @@ function randomizeColors(){
         if (colorDict.hasOwnProperty(key)) {           
         document.querySelector(':root').style.setProperty(key, colorDict[key]);
         }
-    }   
+    }  
+    
+    document.querySelector('#aboutpic').style.backgroundImage =
+            "url('/images/random" + (Math.floor(Math.random() * 12) + 1) + ".jpg')"
+
+    var degrees = Math.round(Math.random() * 200);
+    $('#aboutimg').css({
+
+        'transform': 'rotate(' + degrees + 'deg)',
+        '-ms-transform': 'rotate(' + degrees + 'deg)',
+        '-moz-transform': 'rotate(' + degrees + 'deg)',
+        '-webkit-transform': 'rotate(' + degrees + 'deg)',
+        '-o-transform': 'rotate(' + degrees + 'deg)'
+      });
+
 }
 
