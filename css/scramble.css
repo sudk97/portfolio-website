@@ -1,4 +1,4 @@
-.container {
+.scramblecontainer {
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -7,10 +7,9 @@
 }
 .scrambletext {
   font-family: 'Raleway';
-  font-weight: 100;
-  font-size: 28px;
-  color: #FFDD6B;
+  font-size: 1rem;
+  color: var(--txt1);
 }
 .dud {
-  color: #F8DC81;
+  color: var(--txt1);
 }

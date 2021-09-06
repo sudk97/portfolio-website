@@ -22,7 +22,7 @@ function randomizeColors(){
     }  
     
     document.querySelector('#aboutpic').style.backgroundImage =
-            "url('/images/random" + (Math.floor(Math.random() * 12) + 1) + ".jpg')"
+            "url('./images/random" + (Math.floor(Math.random() * 12) + 1) + ".jpg')"
 
     var degrees = Math.round(Math.random() * 200);
     $('#aboutimg').css({

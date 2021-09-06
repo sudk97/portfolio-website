@@ -54,8 +54,13 @@ class TextScramble {
 
 
 const phrases = [
-  'Hello.', 
-  'I\'m Sudarshan Khasnis'
+  'finding needle in full stack', 
+  'automating life',
+  'sharing the beauty of technology',
+  'building soul soothing UI/UX designs',
+  'uplifting human race',
+  'adding color into reality',
+  'spreading the joy of creation'
 ]
 
 const el = document.querySelector('.scrambletext')
@@ -64,7 +69,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1000)
+    setTimeout(next, 1500)
   })
   counter = (counter + 1) % phrases.length
 }
