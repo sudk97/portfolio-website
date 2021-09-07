@@ -221,8 +221,8 @@ class Carousel {
 
 let projects = [
                 {"img": "./images/dreamvr.png", "title": "DreamVR", "desc": "Android Application enabling interactive Virtual Reality experience on smartphones"},
-                {"img": "./images/docranker.png", "title": "DocRanker", "desc": "Desktop application helping search and rank millions of papers and journals"},
-                {"img": "./images/delishrecipe.png", "title": "Delish Recipes", "desc": "Website to search recipes given available ingredients"},
+                {"img": "./images/docranker.png", "title": "DocRanker", "desc": "Desktop application to search and rank millions of papers or journals"},
+                {"img": "./images/delishrecipe.png", "title": "Delish Recipes", "desc": "Recipe website for available ingredients"},
                 {"img": "./images/vectorspace.png", "title": "Ant Colony Research", "desc": "Novel method to pull out ant colony algorithm from local optima in minimum weight code-word problem"}
 ];
 
