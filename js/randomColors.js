@@ -24,7 +24,7 @@ function randomizeColors(){
     document.querySelector('#aboutpic').style.backgroundImage =
             "url('./images/random" + (Math.floor(Math.random() * 12) + 1) + ".jpg')"
 
-    var degrees = Math.round(Math.random() * 200);
+    var degrees = Math.round(Math.random() * 360);
     $('#aboutimg').css({
 
         'transform': 'rotate(' + degrees + 'deg)',
